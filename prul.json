@@ -1,0 +1,8 @@
+{
+    "customer": "imisauditdev",
+    "customercode": "63-nethserver",
+    "customerlogin": "audit-nethserver",
+    "serverip": "backup.qassurance.com",
+    "serverport": "22657",
+    "MYSQL_DATABASE": "ost_db"
+}
