@@ -1,5 +1,5 @@
-customer=imisauditdev
-customercode=63-nethserver
+customer=imisdemo
+customercode=00-imisdemo
 customerlogin=audit-nethserverr
 serverip=backup.qassurance.com
 serverport=22657
