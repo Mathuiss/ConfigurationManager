@@ -1,4 +1,4 @@
-customer=imisdemo
+customer=[server]
 customercode=00-imisdemo
 customerlogin=audit-nethserverr
 serverip=backup.qassurance.com
