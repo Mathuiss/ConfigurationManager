@@ -10,7 +10,7 @@ $jsonPayload = $respone->getBody();
 $payload = json_decode($jsonPayload);
 
 if (count($payload) > 0) {
-    $file = fopen("customer.sh", "w");
+    $file = fopen("root_customer", "w");
 
     foreach ($payload as $key => $value) {
         fwrite($file, "{$key}={$value}\n");
@@ -19,4 +19,4 @@ if (count($payload) > 0) {
     fclose($file);
 }
 
-echo shell_exec("cat customer.sh");
+echo shell_exec("cat root_customer");

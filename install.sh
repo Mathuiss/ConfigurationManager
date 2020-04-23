@@ -1,0 +1,1 @@
+ln -s ../customer.sh root_customer
