@@ -4,18 +4,22 @@
 $RESTSERVER = "http://imisqa.com:5050";
 
 $payload = array();
+$target;
 
 $file = fopen("root_customer", "r");
 
 while (!feof($file)) {
     $line = fgets($file);
-    if ($line != "") {
-        $splitResult = explode("=", str_replace("\n", "", $line));
-    }
 
-    $payload[$splitResult[0]] = $splitResult[1];
+    if ($line != "") {
+        $split = explode("=", $line);
+
+        if ($split[0] == "customer") {
+            $target = $split[1];
+        }
+
+        array_push($payload, $line);
+    }
 }
 
 fclose($file);
-
-$target = $payload["customer"];

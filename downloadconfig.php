@@ -12,8 +12,8 @@ $payload = json_decode($jsonPayload);
 if (count($payload) > 0) {
     $file = fopen("root_customer", "w");
 
-    foreach ($payload as $key => $value) {
-        fwrite($file, "{$key}={$value}\n");
+    for ($i = 0; $i < count($payload); $i++) {
+        fwrite($file, $payload[$i]);
     }
 
     fclose($file);
