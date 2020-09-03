@@ -9,7 +9,7 @@ $target;
 $file = fopen("root_customer", "r");
 
 while (!feof($file)) {
-    $line = fgets($file);
+    $line = trim(fgets($file));
 
     if ($line != "") {
         $split = explode("=", $line);
